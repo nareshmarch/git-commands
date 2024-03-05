@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Specify the process name to check
+process_name="your_process_name"
+
+# Check if the process is running
+if pgrep -x "$process_name" > /dev/null; then
+    echo "Process $process_name is running."
+else
+    echo "Process $process_name is not running."
+fi
